@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Przycisk "Add Note" na górze -->
+    <Button
+        android:id="@+id/btnAddNote"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/gradient_button"
+        android:text="Dodaj notatkę" />
+
+    <!-- LinearLayout na przyciski "Moje notatki" i "Udostępnione" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddNote"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <!-- Przycisk "Moje notatki" -->
+        <Button
+            android:id="@+id/btnMyNotes"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="16dp"
+
+            android:background="@drawable/gradient_button_2"
+            android:textColor="@color/color_5"
+            android:text="Moje notatki" /> <!-- Dodane odstępu na końcu przycisku -->
+
+        <!-- Przycisk "Udostępnione" -->
+        <Button
+            android:id="@+id/btnSharedNotes"
+            android:layout_width="185dp"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/gradient_button_2"
+            android:textColor="@color/color_5"
+            android:text="Udostępnione" />
+    </LinearLayout>
+
+    <!-- RecyclerView do wyświetlania notatek -->
+
+    <!-- TextView do wyświetlania udostępnionych notatek -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="559dp"
+
+        android:layout_marginTop="172dp" />
+
+    <TextView
+        android:id="@+id/textViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerViewNotes"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

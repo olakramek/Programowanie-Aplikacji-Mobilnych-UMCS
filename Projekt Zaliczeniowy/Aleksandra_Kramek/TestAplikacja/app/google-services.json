@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "862615727626",
+    "project_id": "testaplikacja-dd4c3",
+    "storage_bucket": "testaplikacja-dd4c3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862615727626:android:51abdee8cf2d2962ec79f3",
+        "android_client_info": {
+          "package_name": "com.example.testaplikacja"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_yHsbqg3kVu8zfODd0yb5gFiDXvS4ahA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

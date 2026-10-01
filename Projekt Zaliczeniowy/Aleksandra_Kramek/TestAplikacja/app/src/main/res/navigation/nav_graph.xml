@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.testaplikacja.MainFragment"
+        android:label="">
+
+        <action
+            android:id="@+id/action_mainFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+
+    </fragment>
+    <!-- res/navigation/nav_graph.xml -->
+
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.testaplikacja.NotesFragment"
+        android:label="Notatki" >
+
+        <action
+            android:id="@+id/action_notesFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+
+        <!-- Dodaj inne akcje nawigacyjne, jeśli to konieczne -->
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.example.testaplikacja.AddNoteFragment"
+        android:label="Dodaj notatkę" >
+        <!-- Dodaj konfigurację dla AddNoteFragment, jeśli to konieczne -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.example.testaplikacja.ReminderFragment"
+        android:label="Przypomieninia"
+         >
+    </fragment>
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.example.testaplikacja.ListFragment"
+        android:label="Lista"
+        >
+    </fragment>
+
+</navigation>
