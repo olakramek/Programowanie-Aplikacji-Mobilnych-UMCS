@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AppCompat theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme attributes as needed -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">@color/purple_200</item>
+    </style>
+
+    <!-- Other styles -->
+    <style name="CustomTextStyle">
+        <!-- Add your custom text style attributes here -->
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>
