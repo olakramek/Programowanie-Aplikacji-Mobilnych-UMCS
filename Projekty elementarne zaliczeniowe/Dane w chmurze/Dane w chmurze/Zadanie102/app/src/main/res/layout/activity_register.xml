@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_register.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Pole email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"/>
+
+    <!-- Pole hasło -->
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hasło"
+        android:inputType="textPassword"/>
+
+    <!-- Potwierdzenie hasła -->
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Potwierdź hasło"
+        android:inputType="textPassword"/>
+
+    <!-- Przycisk Zarejestruj -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zarejestruj"/>
+
+    <!-- Przycisk Powrót do logowania -->
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Powrót do logowania"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+
+
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dodaj produkt" />
+
+    <Button
+        android:id="@+id/btnRemoveProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuń produkt" />
+
+    <Button
+        android:id="@+id/btnDisplayProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wyświetl produkty" />
+    <TextView
+        android:id="@+id/textViewProducts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista produktów:"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+
+</LinearLayout>
+
